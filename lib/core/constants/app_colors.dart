@@ -1,0 +1,200 @@
+import 'package:flutter/material.dart';
+
+class AppColors {
+  /* ==================== Primary Colors ==================== */
+  /// Primary brand color (Orange) - Extract exact value from Figma
+  static const Color primaryColor = Color(0xFEC4BC7);
+  static const Color secondaryColor = Color(0xF8B2CFF);
+  static const Color primaryDark = Color(0xFFE6681F);
+  static const Color primaryLight = Color(0xFFFF9D6B);
+  static const Color primaryContainer = Color(0xFFFFE8DC);
+
+  /* ==================== Background Colors ==================== */
+  static const LinearGradient primaryGradient = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [AppColors.primaryColor, AppColors.secondaryColor],
+    // stops: [0.0, 0.5, 1.0],
+  );
+  static const Color bgPrimary = Color(0xFF0B0D10F2);
+    static const Color containerBg = Color(0xFF2A2E38);
+  static const Color bgSecondary =Color(0xFF2A2E38);
+  static const Color bgTertiary = Color(0xFFF8F8F8);
+  static const Color surface = Color(0xFFFFFFFF);
+  static const Color surfaceVariant = Color(0xFFF5F5F5);
+
+  /* ==================== Text Colors ==================== */
+  static const Color textPrimary = Color(0xFF000000);
+  static const Color textSecondary = Color(0xFF4B4B4B);
+  static const Color textTertiary = Color(0xFF848484);
+  static const Color textHint = Color(0xFF848484);
+  static const Color textDisabled = Color(0xFFD4D4D4);
+  static const Color textOnPrimary = Color(0xFFFFFFFF);
+  static const Color textOnSecondary = Color(0xFFFFFFFF);
+
+  /* ==================== Neutral Colors ==================== */
+  static const Color black = Color(0xFF000000);
+  static const Color white = Color(0xFFFFFFFF);
+  static const Color darkGrey = Color(0xFF1F2937);
+  static const Color grey2D = Color(0xFF2D2D2D);
+  static const Color grey4B = Color(0xFF4B4B4B);
+  static const Color grey = Color(0xFF848484);
+  static const Color lightGrey = Color(0xFFDADADA);
+  static const Color greyD9 = Color(0xFFD9D9D9);
+  static const Color greyE8 = Color(0xFFE8E8E8);
+  static const Color greyD4 = Color(0xFFD4D4D4);
+  static const Color greyEFF = Color(0xFFEFF6FF);
+
+  /* ==================== Semantic Colors ==================== */
+  // Success
+  static const Color success = Color(0xFF28A745);
+  static const Color successLight = Color(0xFFD4EDDA);
+  static const Color successDark = Color(0xFF1E7E34);
+
+  // Error
+  static const Color error = Color(0xFFFF0040);
+  static const Color errorLight = Color(0xFFFFE5E5);
+  static const Color errorDark = Color(0xFFCC0033);
+
+  // Warning
+  static const Color warning = Color(0xFFFDC300);
+  static const Color warningLight = Color(0xFFFFF4D6);
+  static const Color warningDark = Color(0xFFE6B000);
+
+  // Info
+  static const Color info = Color(0xFF1E90FF);
+  static const Color infoLight = Color(0xFFE6F3FF);
+  static const Color infoDark = Color(0xFF0066CC);
+
+  /* ==================== Accent Colors ==================== */
+  static const Color red = Color(0xFFFF0040);
+  static const Color yellow = Color(0xFFFDC300);
+  static const Color green = Color(0xFF28A745);
+  static const Color blue = Color(0xFF1E90FF);
+  static const Color blueTransparent = Color(0x421E90FF);
+  static const Color amberTransparent = Color(0x4DA66E00);
+
+  /* ==================== UI Element Colors ==================== */
+  static const Color borderColor = Color(0xFFD4D4D4);
+  static const Color borderLight = Color(0xFFE8E8E8);
+  static const Color borderDark = Color(0xFFB0B0B0);
+  static const Color divider = Color(0xFFE8E8E8);
+  static const Color dividerDark = Color(0xFFD4D4D4);
+
+  // Input Fields
+  static const Color fieldBgColor = Color(0xFFFFFFFF);
+  static const Color fieldBorder = Color(0xFFD4D4D4);
+  static const Color fieldBorderFocused = Color(0xFFFF7931);
+  static const Color fieldBorderError = Color(0xFFFF0040);
+
+  // Buttons
+  static const Color buttonColor = Color(0xFFFF7931);
+  static const Color buttonSecondary = Color(0xFFF0F0F0);
+  static const Color buttonDisabled = Color(0xFFD4D4D4);
+  static const Color buttonText = Color(0xFFFFFFFF);
+  static const Color buttonTextSecondary = Color(0xFF000000);
+
+  // Cards
+  static const Color cardBG = Color(0xFFFFFFFF);
+  static const Color cardShadow = Color(0x1A000000);
+
+  // Splash & Onboarding
+  static const Color splashBG = Color(0xFFFF7931);
+  static const Color onboardingBG = Color(0xFFFFFFFF);
+
+  /* ==================== Sports Specific Colors ==================== */
+  // Match Status
+  static const Color liveMatch = Color(0xFFFF0040);
+  static const Color upcomingMatch = Color(0xFF1E90FF);
+  static const Color finishedMatch = Color(0xFF848484);
+  static const Color postponedMatch = Color(0xFFFDC300);
+
+  // Team Colors (can be customized per team)
+  static const Color homeTeam = Color(0xFF1E90FF);
+  static const Color awayTeam = Color(0xFFFF7931);
+
+  /* ==================== Shadow Colors ==================== */
+  static const Color shadowLight = Color(0x1A000000);
+  static const Color shadowMedium = Color(0x33000000);
+  static const Color shadowDark = Color(0x4D000000);
+
+  /* ==================== Overlay Colors ==================== */
+  static const Color overlayLight = Color(0x33000000);
+  static const Color overlayMedium = Color(0x66000000);
+  static const Color overlayDark = Color(0x99000000);
+
+  /* ==================== Legacy Colors (Keep for compatibility) ==================== */
+  static const Color subtitleText = Color(0xFF848484);
+  static const Color defTextColor = Color(0xFFFFFFFF);
+  static const Color statFillColor = Color(0x261E90FF);
+
+  /* ==================== SwissCarExchange Specific ==================== */
+  static const Color sceTeal = Color(0xFF00D5BE);
+  static const Color sceDarkBg = Color(0xFF0A0A0A);
+  static const Color sceCardBg = Color(0xFF111827);
+  static const Color sceGold = Color(0xFFF59E0B);
+  static const Color sceTealStatBg = Color(0xFF042F2E);
+  static const Color sceGoldStatBg = Color(0xFF201608);
+  static const Color scePremiumDealerBg = Color(0xFF332008);
+  static const Color sceSectionHeaderGold = Color(0xFFD59F00);
+  
+  // Premium & Subscription
+  static const Color scePremiumGold = Color(0xFFFFB900);
+  static const Color scePremiumOrange = Color(0xFFFF7931);
+  static const Color scePremiumGlow = Color(0xFFFE9A00);
+  static const Color scePremiumCardGradientStart = Color(0xFF3B250A);
+  static const Color scePremiumCardGradientEnd = Color(0xFF1D1408);
+  static const Color sceRegistrationGold = Color(0xFFE2B93B);
+  static const Color sceRegistrationGoldBg = Color(0xFF2A2208);
+  static const Color sceOnboardingGold = Color(0xFFD4AF37);
+
+  // UI Containers & Backgrounds
+  static const Color sceChartBg = Color(0xFF0F1923);
+  static const Color sceTileBg = Color(0xFF1C2537);
+  static const Color sceDarkBgSecondary = Color(0xFF05080F);
+  
+  // Navigation
+  static const Color sceNavGrey = Color(0xFF6B7280);
+  static const Color sceNavBorder = Color(0xFF374151);
+
+  // Text & Status
+  static const Color sceGrey99 = Color(0xFF99A1AF);
+  static const Color sceGreyA0 = Color(0xFFA0AABF);
+  static const Color sceGlowGreenLight = Color(0xFF25DD6C);
+  static const Color sceGlowGreenDark = Color(0xFF2F9757);
+  static const Color errorRed = Color(0xFFEF4444);
+  
+  // Additional Semantic Colors
+  static const Color sceSplashCyan = Color(0xFF0CFFE5);
+  static const Color scePendingGreen = Color(0xFF00FF88);
+  static const Color sceDarkBgAlternative = Color(0xFF1E1E1E);
+  static const Color sceSuccessDarkBg = Color(0xFF0D2018);
+  static const Color sceErrorDarkBg = Color(0xFF1E0A0A);
+  static const Color sceWarningDarkBg = Color(0xFF1E1400);
+  static const Color sceInfoDarkBg = Color(0xFF0A1020);
+
+  /* ==================== Automatically Extracted Colors ==================== */
+  static const Color sceSlateDarkBg = Color(0xFF1E2230);
+  static const Color sceCoralRed = Color(0xFFFF6B6B);
+  static const Color sceDeepNavy = Color(0xFF1A2235);
+  static const Color sceGoldNotification = Color(0xFFD4A843);
+  static const Color sceBrightGold = Color(0xFFE2B93B);
+  static const Color sceBlueNotification = Color(0xFF64B5F6);
+  static const Color sceDarkTealBg = Color(0xFF0F1B1A);
+  static const Color sceSlateGrey = Color(0xFF4A5568);
+  static const Color sceTealDark = Color(0xFF005662);
+  static const Color sceOrangeLight = Color(0xFFFFB300);
+  static const Color sceOrangeDark = Color(0xFFE65100);
+  static const Color sceOrange = Color(0xFFFF9800);
+  static const Color sceRed = Color(0xFFE53935);
+  static const Color sceDarkPurpleBg = Color(0xFF1E1E2E);
+  static const Color sceMutedGrey = Color(0xFFB0B0C3);
+  static const Color sceMutedBlueGrey = Color(0xFF7C7C9A);
+  static const Color sceIndigo = Color(0xFF7C6FF7);
+  static const Color sceGreen = Color(0xFF4CAF50);
+  static const Color scePurple = Color(0xFF4F46E5);
+  static const Color sceCyan = Color(0xFF2E9CCA);
+  static const Color sceBlue = Color(0xFF1976D2);
+  static const Color sceDarkBrownBg = Color(0xFF1E140C);
+  static const Color sceBrownBg = Color(0xFF2A1B0D);
+}
